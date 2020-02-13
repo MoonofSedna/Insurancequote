@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-box;
+  height: 100%;
+  
 }
+body {
+ 
+  font-family:'Nunito', Arial, Helvetica, sans-serif;
+  background-size: 100% 100%;
+  background: #4e8195;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e8195, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e8195, #e96443); 
+}
+ul {
+  list-style: none;
+  padding: none;
+  margin: none;
+}
+span.result {
+  position: relative;
+  width: 100%;
+}
+.result-enter {
+  transition: 1.5s;
+}
+.result-enter.resultado-enter-active{
+  transform: translateY(0%);
+}
+.result-exit{
+  transform: translateY(0);
+  transition: 1.5s;
+  position : absolute;
+  left: 0;
+  bottom : 0;
+  right: 0;
+}
+.result-exit-active{
+  opacity: 0;
+  transform: translateY(-10%);
+}
+input:focus, input.form-control:focus {
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
 }
