@@ -1,31 +1,39 @@
 html {
   box-sizing: border-box;
   height: 100%;
-  
+
 }
 body {
- 
+
   font-family:'Nunito', Arial, Helvetica, sans-serif;
   background-size: 100% 100%;
-  background: #4e8195;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4e8195, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4e8195, #e96443); 
+  background-color: rgb(247, 247, 247);
+  color: black;
 }
+
+h2{
+  font-size: 2rem;
+}
+
 ul {
   list-style: none;
   padding: none;
   margin: none;
 }
+
 span.result {
   position: relative;
   width: 100%;
 }
+
 .result-enter {
   transition: 1.5s;
 }
+
 .result-enter.resultado-enter-active{
   transform: translateY(0%);
 }
+
 .result-exit{
   transform: translateY(0);
   transition: 1.5s;
@@ -34,15 +42,24 @@ span.result {
   bottom : 0;
   right: 0;
 }
+
 .result-exit-active{
   opacity: 0;
   transform: translateY(-10%);
 }
-input:focus, input.form-control:focus {
 
+input:focus, input.form-control:focus {
   outline:none !important;
   outline-width: 0 !important;
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
+}
+
+label{
+  color:black;
+}
+
+.img-l{
+  width: 70%;
 }
